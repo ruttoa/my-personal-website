@@ -42,13 +42,16 @@ ul {
 .content::before {
   content: "";
   display: block;
-  width: 11px;
+  width: 1.3vw;
+  height: 15vh;
+  background-color: var(--text-color);
+}
+.content::after {
+  content: "";
+  display: block;
+  width: 1.3vw;
   height: 50vh;
   background-color: var(--text-color);
-  margin-top: 1em;
-}
-.main{
-  margin-bottom: 50vh;
 }
 .title,
 .subtitle {
