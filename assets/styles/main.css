@@ -1,11 +1,16 @@
 :root {
-  --body-color: #CAF0E5;
-  --text-color: #FAFAA2;
-  --highlight-color: #570bd6;
+  --body-color: #5869f7;
+  --text-color: #030700;
+  --highlight-color: #fafaa2;
 }
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+	text-wrap: balance;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
 }
 html {
   font-size: 16px;
@@ -15,12 +20,13 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: clamp(2.5rem, 7vw, 10rem);
+  font-size: clamp(1.728rem, 2.284vw, 2.827rem);
   font-weight: bold;
   text-align: left;
-  line-height: 1.1;
+  line-height: 1.25;
   color: var(--text-color);
   background-color: var(--body-color);
+  letter-spacing: 0.025rem;
 }
 a {
   color: var(--highlight-color);
@@ -38,24 +44,14 @@ ul {
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
-.content::before {
-  content: "";
-  display: block;
-  width: 1.3vw;
-  height: 15vh;
-  background-color: var(--text-color);
-}
-.content::after {
-  content: "";
-  display: block;
-  width: 1.3vw;
-  height: 50vh;
-  background-color: var(--text-color);
-}
-.title,
-.subtitle {
-  display: none;
+.title {
+  font-size: clamp(2.986rem, 6.459vw, 7.993rem);
+  line-height: 1.1;
+  letter-spacing: 0;
 }
 @media screen and (max-width: 640px) {
   .container {
