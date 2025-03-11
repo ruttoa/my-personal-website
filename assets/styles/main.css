@@ -40,6 +40,7 @@ a:hover, a:visited {
 ul {
   padding: 0;
   list-style-type: none;
+  line-height: 1.6;
 }
 .container {
   padding-left: 2rem;
